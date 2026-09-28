@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectr — Simulateur de Voiture Autonome</title>
+
+    <!-- 
+        On lie notre feuille de style externe.
+        Principe : on sépare TOUJOURS le style du HTML (séparation des responsabilités).
+        En entreprise (Thales inclus), c'est une règle d'or.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        L'élément <canvas> est une zone de dessin bitmap.
+        Contrairement à une <div>, on ne peut PAS y mettre d'éléments HTML enfants.
+        Tout se dessine via JavaScript avec l'API Canvas 2D.
+        
+        IMPORTANT : les attributs width/height du canvas définissent sa RÉSOLUTION interne
+        (nombre réel de pixels dessinables). Ne pas confondre avec le CSS qui gère
+        l'affichage à l'écran. Si tu ne mets que du CSS, l'image sera étirée/floue.
+    -->
+    <canvas id="simulateur" width="1280" height="720"></canvas>
+
+    <!-- 
+        Le script est chargé en fin de <body> pour garantir que le DOM (Document Object Model)
+        est entièrement construit avant que le JS ne s'exécute.
+        Alternative moderne : l'attribut "defer" dans le <head>, mais ici on reste explicite.
+    -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*
+ * style.css — Mise en page du simulateur
+ * 
+ * CONCEPT : Le CSS ici a un rôle précis et limité :
+ * - Centrer le canvas sur la page
+ * - Supprimer les marges par défaut du navigateur
+ * - Donner un fond sombre pour simuler un environnement "nuit" / dashboard
+ * 
+ * On NE gère PAS la logique de dessin ici. Le rendu de la route,
+ * de la voiture, etc. se fait UNIQUEMENT via JavaScript + Canvas API.
+ */
+
+/* Reset des marges par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fond sombre type "salle de contrôle" */
+    background-color: #1a1a2e;
+
+    /* Flexbox pour centrer le canvas horizontalement et verticalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Le canvas doit prendre toute la hauteur visible (viewport height) */
+    min-height: 100vh;
+
+    /* Empêche le scroll inutile */
+    overflow: hidden;
+}
+
+#simulateur {
+    /* Légère ombre portée pour décoller le canvas du fond */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+
+    /* Coins légèrement arrondis pour un look moderne */
+    border-radius: 8px;
+}

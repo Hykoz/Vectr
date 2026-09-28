@@ -1,0 +1,19 @@
+# Dossier assets (logos, images, ressources externes)
+assets/
+
+# Fichiers de suivi perso
+CONTEXT.md
+ROADMAP.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (au cas où plus tard)
+node_modules/
