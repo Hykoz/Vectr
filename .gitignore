@@ -1,6 +1,5 @@
 # Dossier assets (sauf le logo pour le README GitHub)
-assets/*
-!assets/logo.jpg
+
 
 # Fichiers de suivi perso
 CONTEXT.md
