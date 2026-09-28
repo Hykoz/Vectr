@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.jpg" alt="Vectr Logo" width="200"/>
+  <img src="assets/vectr-logo-nobg.png" alt="Vectr Logo" width="200"/>
 </p>
 
 <h1 align="center">Vectr</h1>
