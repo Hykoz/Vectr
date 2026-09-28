@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/vectr-logo-nobg.png" alt="Vectr Logo" width="200"/>
+  <img src="assets/vectr-logo-nobg.png" alt="Vectr Logo" width="400"/>
 </p>
-
-<h1 align="center">Vectr</h1>
 
 <p align="center">
   <strong>Simulateur de voiture autonome en 2D</strong><br/>
